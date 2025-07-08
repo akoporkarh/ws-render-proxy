@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: websocket-proxy
+    env: go
+    buildCommand: go build -o app .
+    startCommand: ./app
+    autoDeploy: true
